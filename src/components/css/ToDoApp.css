@@ -1,0 +1,55 @@
+body {
+    font-family: Calibri;
+}
+
+.main-div-todo-app {
+    margin: 10px;
+    border-radius: 7px;
+    border: 1px solid #282c34;
+    height: 90vh;
+    padding: 1vh;
+    background-color: #cac8c6;
+}
+
+.todo-item-main {
+    width: 13em;
+    height: 13em;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 1em;
+}
+
+.flex-container {
+    display: flex;
+    border: 1px #000000 solid;
+}
+.space-between{
+    justify-content: space-between;
+}
+.flex-item {
+    text-align:center;
+    font-size: 1em;
+    padding: 1.5em;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .flex-container {
+        display: flex;
+        border:1px #000000 solid;
+        flex-direction: column;
+        align-items: center;
+    }
+    .todo-item-main {
+        width: 20em;
+        min-width: 12em;
+    }
+}
+
+.new-block-default {
+    display: none;
+}
+.delete-action {
+    cursor: pointer;
+    float: right;
+}

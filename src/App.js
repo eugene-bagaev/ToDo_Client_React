@@ -1,32 +1,33 @@
 import React, {Component} from 'react';
-// import Contacts from './components/contacts';
+import ToDoApp from './components/ToDoApp';
 
-// server api for all data http://46.101.211.139:3000/
 
 class App extends Component {
     render() {
         return (
-            <h1>Hello</h1>
+            <ToDoApp />
         )
     }
 
     state = {
-        contacts: []
+        notes: [],
+        wps: [],
+        users: []
     };
 
     componentDidMount() {
-        console.log('MOUNT')
         fetch('http://46.101.211.139:3000/', {
             headers: {
                 "Content-Type": "text/plain"
             },
         })
-            .then(res => {
-                console.log('DATA: ', res.json());
-                res.json()
-            })
+            .then(res => res.json())
             .then((data) => {
-                this.setState({ contacts: data })
+                this.setState({
+                    notes: data.notes,
+                    wps: data.wps,
+                    users: data.users
+                });
             })
             .catch(console.log)
     }

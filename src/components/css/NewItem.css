@@ -1,0 +1,13 @@
+.new-item-container {
+}
+
+.new-item {
+    border: 1px solid black;
+    width: 15em;
+}
+
+.add-item-link {
+    color: darksalmon;
+    cursor: pointer;
+    text-decoration: underline;
+}
