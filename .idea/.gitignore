@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+/modules.xml
+/misc.xml
+/vcs.xml
+/ToDo_Client_React.iml
